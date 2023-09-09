@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Web Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+    <!-- defer used for parallel load of java file along with html file and in this case we use script tag under head tag / for normal execution use it below just befor body close tag-->
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="My Logo" class="logo">
+        <!-- <div>
+        <section>Manish's Web Profile</section>
+        </div> -->
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a href="#" class="navbar-link home-link">Home</a></li>
+                <li><a href="#" class="navbar-link about-link">About</a></li>
+                <li><a href="#" class="navbar-link Service-link">Service</a></li>
+                <li><a href="#" class="navbar-link Portfolio-link">Portfolio</a></li>
+                <li><a href="#" class="navbar-link Contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- =============================
+    Our Main Hero Section Starts
+    ==================================-->
+    <main>
+        <section class="section-hero section">
+            <div class="container grid grid-two-coloum">
+                <!-- Hero section Left side -->
+                <div class="section-hero-data">
+                    <p class="hero-top-data">
+                        This is me
+                    </p>
+                    <h1 class="hero-heading">Manish Singh</h1>
+                    <p class="hero-para">
+                        I am a consulatant and web developer. One stop soltion to every thing here.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores obcaecati, nisi impedit
+                        incidunt dignissimos vitae nam nesciunt eveniet, sed sequi placeat quos temporibus. Eaque rerum
+                        reiciendis at voluptate pariatur eligendi?
+                    </p>
+                    <div>
+                        <a href="#" class="btn hireme-btn">Hire Me</a>
+                    </div> <!-- div could be replaced with button here-->
+
+                </div>
+                <!-- Hero section right side -->
+                <div class="section-hero-image">
+                    <img src="images/Heroright.png" alt="My Develoer style" class="hero-image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =============================
+    Our Bio-Data Section Starts
+    ==================================-->
+    <section class="section-biodata section">
+        <div class="container grid grid-two-coloum">
+            <!-- Bio data left image section -->
+            <div class="bio-image">
+                <img src="images/bioImage.png" alt="My Biodata section Image" class="hero-image">
+            </div>
+            <!-- Biodata right text data section -->
+            <div class="bio-data">
+                <h2 class="common-heading">my bio-data</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit praesentium expedita
+                    impedit est, molestias atque, repellendus similique libero corporis nostrum quos. Autem enim quasi
+                    alias aperiam blanditiis quidem voluptate?
+                </p>
+                <br />
+                <p>
+                    atque, repellendus similique libero corporis nostrum quos. Autem enim quasi alias aperiam blanditiis
+                    quidem voluptate?
+                </p>
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>Design</h3>
+                        <div class="bio-progress-bar">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar bio-progress-bar2">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>CSS</h3>
+                        <div class="bio-progress-bar bio-progress-bar3">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JavaScript</h3>
+                        <div class="bio-progress-bar bio-progress-bar4">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>MERN</h3>
+                        <div class="bio-progress-bar bio-progress-bar5">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio-data-btn">
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================
+    Our portfolio Section Starts
+    ==================================-->
+    <section class="section section-portfolio" id="portfolio-section">
+        <div class="container">
+            <h2 class="common-heading">Latest works</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam commodi quam. Eos, sint amet.
+                Libero deserunt sit excepturi aspernatur esse nesciunt quibusdam doloribus natus, dolore velit veritatis
+                suscipit illo.
+            </p>
+        </div>
+        <div class="p-btns">
+            <!-- shortcuts .btn.p-btn*3 to write multiple line with same div and class -->
+            <div class="btn p-btn" data-btn-num="1">Website</div>
+            <div class="btn p-btn" data-btn-num="2">Youtube</div>
+            <div class="btn p-btn" data-btn-num="3">Design</div>
+        </div>
+        <div class="container grid grid-three-coloum portfolio-images">
+            <div class="img-overlay p-btn--1">
+                <img src="images/portfolio/1.jpg" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 1</a>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--2">
+                <img src="images/portfolio/2.jpg" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 2</a>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--3">
+                <img src="images/portfolio/3.png" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 3</a>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--1 p-btn--3">
+                <img src="images/portfolio/4.png" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 4</a>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--2 p-btn--1">
+                <img src="images/portfolio/5.jpg" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 5</a>
+                </div>
+            </div>
+            <div class="img-overlay p-btn--2">
+                <img src="images/portfolio/8.jpg" alt="my protfolios">
+                <div class="overlay">
+                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 6</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- =============================
+    Our work counter Section Starts
+    ==================================-->
+    <section class="section section-work-data">
+        <div class="container grid grid-four-coloum">
+            <div>
+                <h2 class="counter-numbers">2000+</h2>
+                <p>Project Completed</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers">6000+</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers">5000+</h2>
+                <p>Cup of Coffee</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers">3000+</h2>
+                <p>Real professional</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
