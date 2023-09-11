@@ -27,6 +27,24 @@ p_btns.addEventListener("click", (e) => {
   console.log(`p-btn--${btn_num}`);
   console.log(img_active);
 
-  p_img_elem.forEach((currElem) => currElem.classList.add("p-image-not-active"));
-  img_active.forEach((currElem) => currElem.classList.remove("p-image-not-active"));
+  p_img_elem.forEach((currElem) =>
+    currElem.classList.add("p-image-not-active")
+  );
+  img_active.forEach((currElem) =>
+    currElem.classList.remove("p-image-not-active")
+  );
+});
+
+//Swiper-js
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  // autoplay: {
+  //   delay: 2500,
+
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
