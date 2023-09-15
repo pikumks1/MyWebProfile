@@ -16,25 +16,31 @@
 
 <body>
     <header class="header">
-        <img src="images/logo.png" alt="My Logo" class="logo">
+        <img src="images/logo2.png" alt="My Logo" class="logo">
         <!-- <div>
         <section>Manish's Web Profile</section>
         </div> -->
         <nav class="navbar">
             <ul class="navbar-lists">
                 <li><a href="#" class="navbar-link home-link">Home</a></li>
-                <li><a href="#" class="navbar-link about-link">About</a></li>
-                <li><a href="#" class="navbar-link Service-link">Service</a></li>
+                <li><a href="about.html" class="navbar-link about-link">About</a></li>
+                <li><a href="service.html" class="navbar-link Service-link">Service</a></li>
                 <li><a href="#" class="navbar-link Portfolio-link">Portfolio</a></li>
-                <li><a href="#" class="navbar-link Contact-link">Contact</a></li>
+                <li><a href="contact.html" class="navbar-link Contact-link">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Mobile Nav bar  -->
+        <div class="mobile-nav-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon">abc</ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon">abc</ion-icon>
+        </div>
     </header>
     <!-- =============================
     Our Main Hero Section Starts
     ==================================-->
     <main>
-        <section class="section-hero section">
+        <section class="section section-hero">
             <div class="container grid grid-two-coloum">
                 <!-- Hero section Left side -->
                 <div class="section-hero-data">
@@ -63,7 +69,7 @@
     <!-- =============================
     Our Bio-Data Section Starts
     ==================================-->
-    <section class="section-biodata section">
+    <section class="section section-biodata">
         <div class="container grid grid-two-coloum">
             <!-- Bio data left image section -->
             <div class="bio-image">
@@ -183,19 +189,19 @@
     <section class="section section-work-data">
         <div class="container grid grid-four-coloum">
             <div>
-                <h2 class="counter-numbers">2000+</h2>
+                <h2 class="counter-numbers" data-number="2000">0+</h2>
                 <p>Project Completed</p>
             </div>
             <div>
-                <h2 class="counter-numbers">6000+</h2>
+                <h2 class="counter-numbers" data-number="6000">0+</h2>
                 <p>Happy Clients</p>
             </div>
             <div>
-                <h2 class="counter-numbers">5000+</h2>
+                <h2 class="counter-numbers" data-number="5000">0+</h2>
                 <p>Cup of Coffee</p>
             </div>
             <div>
-                <h2 class="counter-numbers">3000+</h2>
+                <h2 class="counter-numbers" data-number="3000">0+</h2>
                 <p>Real professional</p>
             </div>
         </div>

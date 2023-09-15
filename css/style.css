@@ -73,9 +73,9 @@ Header Section Starts
 =================== */
 
 .header {
-    padding: 0 4.8px;
-    height: 10rem;
-    background-color: var(--bg);
+    padding: 0 10px;
+    height: 8rem;
+    background-color: #e4e5f1; 
     /* background-color: red; */
 
     display: flex;
@@ -84,7 +84,12 @@ Header Section Starts
 }
 
 .header .logo {
-    height: 150px;
+    height: 50px;
+    opacity: 0.9;
+}
+
+.navbar{
+    padding: 0 4rem;
 }
 
 .navbar-lists {
@@ -109,7 +114,16 @@ Header Section Starts
     color: var(--helper);
 }
 
+.mobile-nav-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
 
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
 
 
 
@@ -249,9 +263,12 @@ Hero Section CSS Starts
     align-items: center;
 }
 
-/* ================
+/* ================section-biodata
 Bio Section CSS Starts
 =================== */
+.section-biodata{
+    padding: 5rem 0;
+}
 
 .bio-image {
     display: flex;
@@ -469,8 +486,10 @@ work Data counter CSS Starts
 /* ================
 work Service CSS Starts
 =================== */
+
 .section-services {
     transition: all 0.7s linear;
+    padding: 5rem 0;
 }
 
 .section-services p {
@@ -486,8 +505,9 @@ work Service CSS Starts
     background-color: antiquewhite;
 } */
 .section-services .grid {
-    margin: 10rem;
+    /* margin: 10rem; */
     row-gap: 10rem;
+    text-align: center;
 }
 
 .service-box {
@@ -656,6 +676,10 @@ Freelancing CSS Starts
     position: relative;
     transition: all 0.7s linear;
     text-align: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-freelancing .overlay {
@@ -734,6 +758,7 @@ Footer CSS Starts
 .section-footer h3 {
     color: var(--white);
     margin-bottom: 4rem;
+    margin-top: 8rem;
 }
 
 .f-about-p {
@@ -745,10 +770,15 @@ Footer CSS Starts
 .f-address address {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 0rem;
     justify-content: center;
     /* for coloumn justify-content: center;
     for rows Align-Item: center; */
+}
+
+.f-links h3,
+.f-services h3 {
+    margin-left: 4rem;
 }
 
 .f-links li,
@@ -760,6 +790,145 @@ Footer CSS Starts
     text-transform: capitalize;
 }
 
-.f-links span, .f-services span, .f-address span{
+.f-links span,
+.f-services span,
+.f-address span {
     margin-right: 1rem;
+}
+
+.f-address p,
+.f-address p a {
+    font-style: normal;
+    color: #adadad;
+}
+
+.f-address div {
+    height: 4rem;
+}
+
+.f-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+
+.f-social-icons .icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--icon-bg);
+    display: inline-block;
+    /* Display inline block is used for padding etc */
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+}
+
+.f-credits p {
+    text-align: center;
+    color: #adadad;
+}
+
+.section-footer a:hover,
+.section-footer a:active {
+    color: var(--white);
+}
+
+
+
+
+/* ================
+Scrool top CSS Starts
+=================== */
+
+
+.scrollTop-style {
+    /* text-align: right; */
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    z-index: 1;
+}
+
+.scroll-top {
+    width: 4rem;
+    height: 4rem;
+    background: var(--helper);
+    display: inline-block;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    /* refer this site: https://9elements.github.io/fancy-border-radius/#32.39.30.36--. */
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+
+}
+
+
+/* ================
+Media Queries Section
+=================== */
+
+@media(max-width: 980px){
+    .header{
+        position: relative;
+    }
+    .mobile-nav-btn{
+        display: block;
+        z-index: 9999;
+        border: 3px solid var(--black);
+        color: var(--black);
+    }
+    .mobile-nav-icon{
+        width: 5rem;
+        height: 5rem;
+        color: var(--black);
+    }
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background-color: rgb(206, 163, 163); */
+        background-color: #71909c;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        /* display: none; */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 9999;
+    }
+    .navbar-lists{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .navbar-lists .navbar-link:link,
+    .navbar .navbar-lists .navbar-link:visited{
+        color: var(--black);
+        font-size: 3.2rem;
+    }
+
+    .active .navbar{
+        transform: translateX(0%);
+        /* transition: all 0.5s linear; */
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-nav-btn .mobile-nav-icon[name = "menu-outline"]{
+        display: none;
+    }
+    .active .mobile-nav-btn .mobile-nav-icon[name = "close-outline"]{
+        display: block;
+    }
 }

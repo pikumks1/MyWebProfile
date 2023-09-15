@@ -1,6 +1,15 @@
 // =======================================
-//  Creating a portfolio tabbed component
+//  Creating a responsive navbar button
 // =======================================
+const mobile_nav = document.querySelector(".mobile-nav-btn");
+const headerElem = document.querySelector(".header");
+
+mobile_nav.addEventListener("click", () => {
+  headerElem.classList.toggle("active");
+});
+
+
+// to show/hide portfolio as per button clicked
 const p_btns = document.querySelector(".p-btns");
 const p_btn = document.querySelectorAll(".p-btn");
 const p_img_elem = document.querySelectorAll(".img-overlay");
@@ -37,22 +46,50 @@ p_btns.addEventListener("click", (e) => {
 
 //Swiper-js
 var swiper = new Swiper(".mySwiper", {
-<<<<<<< HEAD
   slidesPerView: 1,
   spaceBetween: 50,
-  // autoplay: {
-  //   delay: 2500,
-  // },
-=======
-  slidesPerView: 2,
-  spaceBetween: 30,
-   autoplay: {
+  autoplay: {
     delay: 2500,
-
   },
->>>>>>> f77afda3dec0d0603ddca5920f5032c7baeb1aac
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+//scroll to top button
+//create html code with java file
+
+const heroSection = document.querySelector(".section-hero");
+const footerElem = document.querySelector(".section-footer");
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
+
+footerElem.after(scrollElement);
+const scrollTop = () => {
+heroSection.scrollIntoView({"behavior": "smooth"})
+}
+
+scrollElement.addEventListener("click",scrollTop)
+
+// Animate number counter
+const counterNum = document.querySelectorAll(".counter-numbers");
+const speed = 200;
+counterNum.forEach((currElem) => {
+  const UpdateNumber = () => {
+    const targetNumber = parseInt(currElem.dataset.number);
+    // console.log(targetNumber);
+    const InitialNum = parseInt(currElem.innerText);
+    // console.log(InitialNum);
+    const incrementNumber = Math.trunc(targetNumber/200);
+    // console.log(incrementNumber);
+
+    if (InitialNum < targetNumber){
+      currElem.innerText = `${InitialNum + incrementNumber}+`;
+
+      setTimeout(UpdateNumber,10);
+    }
+  };
+  UpdateNumber();
 });
