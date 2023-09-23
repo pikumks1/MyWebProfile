@@ -1,0 +1,63 @@
+    -- Lazzy loading test code
+    <section class="section section-biodata">
+        <div class="container grid grid-two-coloum">
+            <!-- Bio data left image section -->
+            <div class="bio-image">
+                <img 
+                src="images/bioImage.png" 
+                data-src="images/R_4k_img.jpg" 
+                alt="My Biodata section Image" 
+                class="lazy-image"
+                loading="lazy">
+            </div>
+            <!-- Biodata right text data section -->
+            <div class="bio-data">
+                <h2 class="common-heading">my bio-data</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit praesentium expedita
+                    impedit est, molestias atque, repellendus similique libero corporis nostrum quos. Autem enim quasi
+                    alias aperiam blanditiis quidem voluptate?
+                </p>
+                <br />
+                <p>
+                    atque, repellendus similique libero corporis nostrum quos. Autem enim quasi alias aperiam blanditiis
+                    quidem voluptate?
+                </p>
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>Design</h3>
+                        <div class="bio-progress-bar">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar bio-progress-bar2">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>CSS</h3>
+                        <div class="bio-progress-bar bio-progress-bar3">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JavaScript</h3>
+                        <div class="bio-progress-bar bio-progress-bar4">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>MERN</h3>
+                        <div class="bio-progress-bar bio-progress-bar5">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bio-data-btn">
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>

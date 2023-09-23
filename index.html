@@ -49,7 +49,7 @@
                     </p>
                     <h1 class="hero-heading">Manish Singh</h1>
                     <p class="hero-para">
-                        I am a consulatant and web developer. One stop soltion to every thing here.
+                        I am a consulatant and web developer. One stop solution to every thing here.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores obcaecati, nisi impedit
                         incidunt dignissimos vitae nam nesciunt eveniet, sed sequi placeat quos temporibus. Eaque rerum
                         reiciendis at voluptate pariatur eligendi?
@@ -265,6 +265,12 @@
             </div>
         </div>
     </section>
+
+    <!-- =============================
+    Our Resume - Lazy Load pic  (Copy of Biodata)Section Starts
+    ==================================-->
+    <!-- Code moved in rough page section for now -->
+
     <!-- =============================
     Our testimonial Section Starts
     ==================================-->
@@ -293,86 +299,6 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="swiper-slide">
                     <div class="swiper-client-msg">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
@@ -479,27 +405,29 @@
             <h2 class="common-heading">Contact Us</h2>
         </div>
         <div class="section-contact-main contact-container">
-            <form action="#">
+            <!-- Used formspree.io to send email as API mail sender -->
+            <form action="https://formspree.io/f/mwkdravg" method="POST">
                 <div class="grid grid-two-coloum">
                     <div>
                         <label for="username"></label>
-                        <input type="text" name="username" placeholder="username" id="username">
+                        <input type="text" name="username" placeholder="username" id="username" required>
                     </div>
+                    <!-- autocomplete="off" - this gives previous form filled suggestion -->
                     <div>
                         <label for="email"></label>
-                        <input type="text" name="email" placeholder="E-mail" id="email">
+                        <input type="email" name="email" placeholder="abc@gmail.com" id="email" required>
                     </div>
                 </div>
                 <div>
                     <label for="subject"></label>
-                    <input type="text" name="subject" placeholder="subject" id="subject">
+                    <input type="text" name="subject" placeholder="subject" id="subject" required>
                 </div>
                 <div>
                     <label for="textarea"></label>
-                    <textarea type="textarea" id="textarea" cols="30" rows="10"> </textarea>
+                    <textarea type="message" name="message" id="textarea" cols="30" rows="10" required minlength="5"> </textarea>
                 </div>
                 <div>
-                    <input type="submit" name="Send" id="submit" class="btn" value="Send Message">
+                    <input type="submit" name="Send" id="submit" class="btn" value="Send Message" required>
                 </div>
             </form>
         </div>
