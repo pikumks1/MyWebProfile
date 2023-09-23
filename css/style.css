@@ -1019,6 +1019,12 @@ Media Queries Section
         visibility: visible;
         pointer-events: auto;
     }
+    .bio-image{
+        display: none;
+    }
+    .section-swiper{
+        display: none;
+    }
 
     .active .mobile-nav-btn .mobile-nav-icon[name = "menu-outline"]{
         display: none;
