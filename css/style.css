@@ -1004,7 +1004,7 @@ Media Queries Section
         flex-direction: column;
         align-items: center;
         position: fixed;
-        left: 5rem;
+        left: 14rem;
     }
     .navbar .navbar-lists .navbar-link:link,
     .navbar .navbar-lists .navbar-link:visited{
