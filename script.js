@@ -44,18 +44,38 @@ p_btns.addEventListener("click", (e) => {
   );
 });
 
-//Swiper-js
+//Swiper-js: https://swiperjs.com/demos
+//url: https://codesandbox.io/s/nssrql
+
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 2,
+//   spaceBetween: 50,
+//   autoplay: {
+//     delay: 2500,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 50,
-  autoplay: {
-    delay: 2500,
-  },
+  slidesPerView: 2,
+    spaceBetween: 50,
+    autoplay: {
+      delay: 2500,
+    },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    },
+
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + "</span>";
+    // },
   },
-});
+);
 
 //scroll to top button
 //create html code with java file
