@@ -152,7 +152,7 @@ Reusable Code Section
 
 .grid-two-coloum {
     grid-template-columns: repeat(2, 1fr);
-    display: flex;
+    /* display: flex; */
     /* grid-template-columns: 1fr 1fr; */
 }
 
@@ -261,15 +261,20 @@ Hero Section CSS Starts
 }
 
 .hero-image {
-    max-width: 80%;
+    max-width: 70%;
+    margin: 10%;
+    box-shadow: var(--shadow-msg);
+    /* border-radius: 10%; */
 }
 
 .section-hero-image {
-    min-width: 40rem;
+    /* min-width: 40rem; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 5rem 5rem; */
 }
+
 
 /* ================section-biodata
 Bio Section CSS Starts
@@ -282,12 +287,11 @@ Bio Section CSS Starts
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .bio-image img {
     width: 80%;
-    box-shadow: -2rem -2rem 2rem 2rem var(--helper);
+    box-shadow: -1rem -1rem 1rem 1rem var(--helper);
     /*not required shadow for my image for now.*/
     display: inline-block;
 }
@@ -893,6 +897,7 @@ Scrool top CSS Starts
 }
 
 
+
 /* ================
 Media Queries Section
 =================== */
@@ -908,11 +913,52 @@ Media Queries Section
         gap: 3.4rem;
     }
 }
+
+
+
 /* for 1200px */
 @media(max-width: 75em) {
     /* Hero section */
 .section-hero h1{
     line-height: 1.06;
+}
+
+/* Hero section */
+.section-hero .grid{
+    gap: 0;
+}
+.section-hero .grid-two-coloum{
+    grid-template-columns: repeat(1,1fr);
+    display: grid;
+}
+.section-hero .section-hero-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-hero-data p{
+    font-size: 2.2rem;
+}
+.hero-image{
+    width: 70%;
+}
+
+
+/* Bio data section */
+.section-biodata .grid-two-coloum{
+    grid-template-columns: repeat(1,1fr);
+    /* display: grid; */
+}
+.section-biodata .bio-image{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* grid-row: 2/3;
+    grid-row: 2; */
+    /* All above will work same */
+}
+.section-biodata .bio-image img{
+    width: 65%;
 }
 
 /* Service section */
@@ -924,14 +970,20 @@ Media Queries Section
         /* It can be made of 2 colum but 3 is fine for me now. */
 }
 
-/* Hero section */
-.section-hero .grid-two-coloum{
-    grid-template-columns: repeat(1,1fr);
+/* Protfolio section */
+.section-portfolio .grid-three-coloum{
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* Work data section */
+.section-work-data .grid-four-coloum{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0;
 }
 
 /* Section Footer */
 .section-footer .grid-four-coloum{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 0;
 }
 /* .section-footer .f-about, .section-footer .f-address{
@@ -948,6 +1000,13 @@ Media Queries Section
     gap: 4.8rem;
 }
 }
+
+
+
+/* 
+
+for max width 490 px: 31em
+*/
 @media(max-width: 31em){
 /* Service section */
 .section-services .grid{
@@ -959,7 +1018,15 @@ Media Queries Section
 }
 }
 
-@media(max-width: 980px){
+
+
+
+
+/* 
+
+for max width 980 px: 61em
+*/
+@media(max-width: 61em){
     html{
         font-size: 50%;
     }
@@ -1019,8 +1086,10 @@ Media Queries Section
         visibility: visible;
         pointer-events: auto;
     }
+    /* Temporary display none */
     .bio-image{
-        display: none;
+        /* display: none; */
+        /* display: block; */
     }
     .section-swiper{
         display: none;
