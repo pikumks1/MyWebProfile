@@ -902,6 +902,9 @@ Scrool top CSS Starts
 Media Queries Section
 =================== */
 /* rem can't be used in media section - root em - 1rem is font-sixe - 10px defined*/
+
+
+/* ========================================================= */
 /* em is pixel/16 -- 1500 px ~ 95em*/
 
 @media(max-width: 95em) {
@@ -915,8 +918,9 @@ Media Queries Section
 }
 
 
-
-/* for 1200px */
+/* =================================================
+    for 1200px
+================================================= */
 @media(max-width: 75em) {
     /* Hero section */
 .section-hero h1{
@@ -983,8 +987,9 @@ Media Queries Section
 
 /* Section Footer */
 .section-footer .grid-four-coloum{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 0;
+    margin-left: 5rem;
 }
 /* .section-footer .f-about, .section-footer .f-address{
     padding-left: 5rem;
@@ -1002,30 +1007,9 @@ Media Queries Section
 }
 
 
-
-/* 
-
-for max width 490 px: 31em
-*/
-@media(max-width: 31em){
-/* Service section */
-.section-services .grid{
-    gap: 6rem;
-}
-.section-services .grid-three-coloum{
-    grid-template-columns: repeat(1,1fr);
-        /* It can be made of 2 colum but 3 is fine for me now. */
-}
-}
-
-
-
-
-
-/* 
-
-for max width 980 px: 61em
-*/
+/* =================================================
+    for 980px
+================================================= */
 @media(max-width: 61em){
     html{
         font-size: 50%;
@@ -1091,7 +1075,7 @@ for max width 980 px: 61em
         /* display: none; */
         /* display: block; */
     }
-    .section-swiper{
+    /* .section-swiper{
         display: none;
     }
 
@@ -1100,5 +1084,21 @@ for max width 980 px: 61em
     }
     .active .mobile-nav-btn .mobile-nav-icon[name = "close-outline"]{
         display: block;
-    }
+    } */
 }
+
+
+
+/* =================================================
+    for 490px
+================================================= */
+@media(max-width: 31em){
+    /* Service section */
+    .section-services .grid{
+        gap: 6rem;
+    }
+    .section-services .grid-three-coloum{
+        grid-template-columns: repeat(1,1fr);
+            /* It can be made of 2 colum but 3 is fine for me now. */
+    }
+    }
