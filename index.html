@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is my portfolio website. I am hosting it to showcase my web development skill sets.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Manish Kumar Singh">
     <title>My New Web Profile</title>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +25,7 @@
 
 <body>
     <header class="header">
-        <a href="index.html">
+        <a href="index.html" aria-label="Header logo">
             <img src="images/logo3.png" alt="My Logo" class="logo">
         </a>
         <!-- <div>
@@ -63,383 +72,396 @@
                 </div>
                 <!-- Hero section right side -->
                 <div class="section-hero-image">
-                    <img src="images/MY_Img1.jpg" alt="My Develoer style" class="hero-image">
+                    <picture>
+                        <source srcset="images/MY_Img1.webp" type="image/webp">
+                        <source srcset="images/MY_Img1.jpg" type="image/jpg">
+                        <img src="images/MY_Img1.jpg" alt="My Developer style" class="hero-image">
+                    </picture>
                 </div>
             </div>
         </section>
-    <!-- </main> -->
-    <!-- =============================
+        <!-- </main> -->
+        <!-- =============================
     Our Bio-Data Section Starts
     ==================================-->
-    <section class="section section-biodata">
-        <div class="container grid grid-two-coloum">
-            <!-- Bio data left image section -->
-            <div class="bio-image">
-                <img src="images/bioImage.png" alt="My Biodata section Image" class="hero-image">
-            </div>
-            <!-- Biodata right text data section -->
-            <div class="bio-data">
-                <h2 class="common-heading">my bio-data</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit praesentium expedita
-                    impedit est, molestias atque, repellendus similique libero corporis nostrum quos. Autem enim quasi
-                    alias aperiam blanditiis quidem voluptate?
-                </p>
-                <br />
-                <p>
-                    atque, repellendus similique libero corporis nostrum quos. Autem enim quasi alias aperiam blanditiis
-                    quidem voluptate?
-                </p>
-                <div class="bio-data-stats">
-                    <div class="bio-stats">
-                        <h3>Design</h3>
-                        <div class="bio-progress-bar">
-                            <span>80%</span>
+        <section class="section section-biodata">
+            <div class="container grid grid-two-coloum">
+                <!-- Bio data left image section -->
+                <div class="bio-image">
+                    <img src="images/bioImage.png" alt="My Biodata section Image" class="hero-image">
+                </div>
+                <!-- Biodata right text data section -->
+                <div class="bio-data">
+                    <h2 class="common-heading">my bio-data</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit praesentium expedita
+                        impedit est, molestias atque, repellendus similique libero corporis nostrum quos. Autem enim
+                        quasi
+                        alias aperiam blanditiis quidem voluptate?
+                    </p>
+                    <br />
+                    <p>
+                        atque, repellendus similique libero corporis nostrum quos. Autem enim quasi alias aperiam
+                        blanditiis
+                        quidem voluptate?
+                    </p>
+                    <div class="bio-data-stats">
+                        <div class="bio-stats">
+                            <h3>Design</h3>
+                            <div class="bio-progress-bar">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="bio-stats">
+                            <h3>HTML</h3>
+                            <div class="bio-progress-bar bio-progress-bar2">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                        <div class="bio-stats">
+                            <h3>CSS</h3>
+                            <div class="bio-progress-bar bio-progress-bar3">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="bio-stats">
+                            <h3>JavaScript</h3>
+                            <div class="bio-progress-bar bio-progress-bar4">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="bio-stats">
+                            <h3>MERN</h3>
+                            <div class="bio-progress-bar bio-progress-bar5">
+                                <span>70%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="bio-stats">
-                        <h3>HTML</h3>
-                        <div class="bio-progress-bar bio-progress-bar2">
-                            <span>99%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>CSS</h3>
-                        <div class="bio-progress-bar bio-progress-bar3">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>JavaScript</h3>
-                        <div class="bio-progress-bar bio-progress-bar4">
-                            <span>85%</span>
-                        </div>
-                    </div>
-                    <div class="bio-stats">
-                        <h3>MERN</h3>
-                        <div class="bio-progress-bar bio-progress-bar5">
-                            <span>70%</span>
-                        </div>
+                    <div class="bio-data-btn">
+                        <a href="https://drive.google.com/file/d/1ekiA-lz1zK_JMuEeG0cYc-lS4_QyvRKD/view?usp=drive_link"
+                            class="btn"
+                            download
+                            target="_blank">Download CV</a>
                     </div>
                 </div>
-                <div class="bio-data-btn">
-                    <a href="#" class="btn">Download CV</a>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- =============================
+        <!-- =============================
     Our portfolio Section Starts
     ==================================-->
-    <section class="section section-portfolio" id="portfolio-section">
-        <div class="container">
-            <h2 class="common-heading">Latest works</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam commodi quam. Eos, sint amet.
-                Libero deserunt sit excepturi aspernatur esse nesciunt quibusdam doloribus natus, dolore velit veritatis
-                suscipit illo.
-            </p>
-        </div>
-        <div class="p-btns">
-            <!-- shortcuts .btn.p-btn*3 to write multiple line with same div and class -->
-            <div class="btn p-btn" data-btn-num="1">Website</div>
-            <div class="btn p-btn" data-btn-num="2">Youtube</div>
-            <div class="btn p-btn" data-btn-num="3">Design</div>
-        </div>
-        <div class="container grid grid-three-coloum portfolio-images">
-            <div class="img-overlay p-btn--1">
-                <img src="images/portfolio/1.jpg" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 1</a>
+        <section class="section section-portfolio" id="portfolio-section">
+            <div class="container">
+                <h2 class="common-heading">Latest works</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore veniam commodi quam. Eos, sint amet.
+                    Libero deserunt sit excepturi aspernatur esse nesciunt quibusdam doloribus natus, dolore velit
+                    veritatis
+                    suscipit illo.
+                </p>
+            </div>
+            <div class="p-btns">
+                <!-- shortcuts .btn.p-btn*3 to write multiple line with same div and class -->
+                <div class="btn p-btn" data-btn-num="1">Website</div>
+                <div class="btn p-btn" data-btn-num="2">Youtube</div>
+                <div class="btn p-btn" data-btn-num="3">Design</div>
+            </div>
+            <div class="container grid grid-three-coloum portfolio-images">
+                <div class="img-overlay p-btn--1">
+                    <img src="images/portfolio/1.jpg" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 1</a>
+                    </div>
+                </div>
+                <div class="img-overlay p-btn--2">
+                    <img src="images/portfolio/2.jpg" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 2</a>
+                    </div>
+                </div>
+                <div class="img-overlay p-btn--3">
+                    <img src="images/portfolio/3.png" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 3</a>
+                    </div>
+                </div>
+                <div class="img-overlay p-btn--1 p-btn--3">
+                    <img src="images/portfolio/4.png" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 4</a>
+                    </div>
+                </div>
+                <div class="img-overlay p-btn--2 p-btn--1">
+                    <img src="images/portfolio/5.jpg" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 5</a>
+                    </div>
+                </div>
+                <div class="img-overlay p-btn--2">
+                    <img src="images/portfolio/8.jpg" alt="my protfolios">
+                    <div class="overlay">
+                        <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 6</a>
+                    </div>
                 </div>
             </div>
-            <div class="img-overlay p-btn--2">
-                <img src="images/portfolio/2.jpg" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 2</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--3">
-                <img src="images/portfolio/3.png" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 3</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--1 p-btn--3">
-                <img src="images/portfolio/4.png" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 4</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--2 p-btn--1">
-                <img src="images/portfolio/5.jpg" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 5</a>
-                </div>
-            </div>
-            <div class="img-overlay p-btn--2">
-                <img src="images/portfolio/8.jpg" alt="my protfolios">
-                <div class="overlay">
-                    <a href="https://charcounter.com/en/" target="_blank" class="common-heading">Project 6</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =============================
+        </section>
+        <!-- =============================
     Our work counter Section Starts
     ==================================-->
-    <section class="section section-work-data">
-        <div class="container grid grid-four-coloum">
-            <div>
-                <h2 class="counter-numbers" data-number="2000">0+</h2>
-                <p>Project Completed</p>
+        <section class="section section-work-data">
+            <div class="container grid grid-four-coloum">
+                <div>
+                    <h2 class="counter-numbers" data-number="2000">0+</h2>
+                    <p>Project Completed</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="6000">0+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="5000">0+</h2>
+                    <p>Cup of Coffee</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="3000">0+</h2>
+                    <p>Real professional</p>
+                </div>
             </div>
-            <div>
-                <h2 class="counter-numbers" data-number="6000">0+</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="5000">0+</h2>
-                <p>Cup of Coffee</p>
-            </div>
-            <div>
-                <h2 class="counter-numbers" data-number="3000">0+</h2>
-                <p>Real professional</p>
-            </div>
-        </div>
-    </section>
-    <!-- =============================
+        </section>
+        <!-- =============================
     Our Services Section Starts
     ==================================-->
-    <section class="section section-services">
-        <div class="container">
-            <h2 class="common-heading">Services offers</h2>
-            <p class="section-service-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam cupiditate inventore ut
-                consequuntur perspiciatis corporis, eligendi provident tenetur. Modi sunt nisi repudiandae error dolore
-                iusto suscipit. Ea, ex repudiandae!
-            </p>
-        </div>
-        <!-- Services offers card -->
-        <div class="container grid grid-three-coloum">
-            <div class="service-box">
-                <ion-icon name="desktop-outline" class="service-icon">abc</ion-icon>
-                <!-- for Icons refer site: https://ionic.io/ionicons -->
-                <h3>Web design</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+        <section class="section section-services">
+            <div class="container">
+                <h2 class="common-heading">Services offers</h2>
+                <p class="section-service-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam cupiditate inventore ut
+                    consequuntur perspiciatis corporis, eligendi provident tenetur. Modi sunt nisi repudiandae error
+                    dolore
+                    iusto suscipit. Ea, ex repudiandae!
                 </p>
             </div>
-            <div class="service-box">
-                <ion-icon name="git-compare-outline" class="service-icon"></ion-icon>
-                <h3>Graphic design</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
-                </p>
+            <!-- Services offers card -->
+            <div class="container grid grid-three-coloum">
+                <div class="service-box">
+                    <ion-icon name="desktop-outline" class="service-icon">abc</ion-icon>
+                    <!-- for Icons refer site: https://ionic.io/ionicons -->
+                    <h3>Web design</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <ion-icon name="git-compare-outline" class="service-icon"></ion-icon>
+                    <h3>Graphic design</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
+                    <h3>Photography</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <ion-icon name="logo-apple" class="service-icon"></ion-icon>
+                    <h3>App development</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <ion-icon name="desktop-outline" class="service-icon">abc</ion-icon>
+                    <h3>CSS skill</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <ion-icon name="megaphone-outline" class="service-icon"></ion-icon>
+                    <h3>backend Development</h3>
+                    <p>
+                        Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
+                    </p>
+                </div>
             </div>
-            <div class="service-box">
-                <ion-icon name="camera-sharp" class="service-icon"></ion-icon>
-                <h3>Photography</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
-                </p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="logo-apple" class="service-icon"></ion-icon>
-                <h3>App development</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
-                </p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="desktop-outline" class="service-icon">abc</ion-icon>
-                <h3>CSS skill</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
-                </p>
-            </div>
-            <div class="service-box">
-                <ion-icon name="megaphone-outline" class="service-icon"></ion-icon>
-                <h3>backend Development</h3>
-                <p>
-                    Its my hobby and passion. Web desing is super cool and awesome skill to learn and practice.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- =============================
+        <!-- =============================
     Our Resume - Lazy Load pic  (Copy of Biodata)Section Starts
     ==================================-->
-    <!-- Code moved in rough page section for now -->
+        <!-- Code moved in rough page section for now -->
 
-    <!-- =============================
+        <!-- =============================
     Our testimonial Section Starts
     ==================================-->
-    <!-- Swiper -->
-    <section class="section section-swiper">
-        <div class="container">
-            <h2 class="common-heading">Happy Clients works</h2>
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- section starts here -->
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
+        <!-- Swiper -->
+        <section class="section section-swiper">
+            <div class="container">
+                <h2 class="common-heading">Happy Clients works</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- section starts here -->
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-client-msg">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
+                            </p>
+                        </div>
+                        <div class="swiper-client-data grid grid-two-coloum">
+                            <figure>
+                                <img src="images/Client/1.jpg" alt="Client review">
+                            </figure>
+                            <div class="client-data-details">
+                                <p>Vinod Thapa</p>
+                                <p>Entrepreneur</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="swiper-client-msg">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid sint ea quisquam .
-                        </p>
-                    </div>
-                    <div class="swiper-client-data grid grid-two-coloum">
-                        <figure>
-                            <img src="images/Client/1.jpg" alt="Client review">
-                        </figure>
-                        <div class="client-data-details">
-                            <p>Vinod Thapa</p>
-                            <p>Entrepreneur</p>
-                        </div>
-                    </div>
+                <div class="swiper-dot">
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-            <div class="swiper-dot">
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- =============================
+        <!-- =============================
     Our Freelancing Section Starts
     ==================================-->
-    <section class="section section-freelancing">
-        <div class="overlay">
-            <div class="container">
-                <h2>I am <span>available</span> for free lancing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium ipsa deleniti porro nobis
-                    excepturi quidem </p>
-                <a href="contact.html" class="btn">Hire Me</a>
+        <section class="section section-freelancing">
+            <div class="overlay">
+                <div class="container">
+                    <h2>I am <span>available</span> for free lancing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium ipsa deleniti porro
+                        nobis
+                        excepturi quidem </p>
+                    <a href="contact.html" class="btn">Hire Me</a>
+                </div>
             </div>
-        </div>
 
-    </section>
-    <!-- =============================
+        </section>
+        <!-- =============================
     Our Contact Section Starts
     ==================================-->
-    <section class="section section-contact">
-        <div class="container">
-            <h2 class="common-heading">Contact Us</h2>
-        </div>
-        <div class="section-contact-main contact-container">
-            <!-- Used formspree.io to send email as API mail sender -->
-            <form action="https://formspree.io/f/mwkdravg" method="POST">
-                <div class="grid grid-two-coloum">
-                    <div>
-                        <label for="username"></label>
-                        <input type="text" name="username" placeholder="username" id="username" required>
+        <section class="section section-contact">
+            <div class="container">
+                <h2 class="common-heading">Contact Us</h2>
+            </div>
+            <div class="section-contact-main contact-container">
+                <!-- Used formspree.io to send email as API mail sender -->
+                <form action="https://formspree.io/f/mwkdravg" method="POST">
+                    <div class="grid grid-two-coloum">
+                        <div>
+                            <label for="username"></label>
+                            <input type="text" name="username" placeholder="username" id="username" required>
+                        </div>
+                        <!-- autocomplete="off" - this gives previous form filled suggestion -->
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="abc@gmail.com" id="email" required>
+                        </div>
                     </div>
-                    <!-- autocomplete="off" - this gives previous form filled suggestion -->
                     <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" placeholder="abc@gmail.com" id="email" required>
+                        <label for="subject"></label>
+                        <input type="text" name="subject" placeholder="subject" id="subject" required>
                     </div>
-                </div>
-                <div>
-                    <label for="subject"></label>
-                    <input type="text" name="subject" placeholder="subject" id="subject" required>
-                </div>
-                <div>
-                    <label for="textarea"></label>
-                    <textarea type="message" name="message" id="textarea" cols="30" rows="10" required
-                        minlength="5"> </textarea>
-                </div>
-                <div>
-                    <input type="submit" name="Send" id="submit" class="btn" value="Send Message" required>
-                </div>
-            </form>
-        </div>
+                    <div>
+                        <label for="textarea"></label>
+                        <!-- <textarea type="message" name="message" id="textarea" cols="30" rows="10" placeholder="write your message" required minlength="5"> </textarea> -->
+                        <textarea type="message" name="message" id="textarea" placeholder="Write your message here..."
+                            cols="30" rows="10" required minlength="5"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="Send" id="submit" class="btn" value="Send Message" required>
+                    </div>
+                </form>
+            </div>
 
-    </section>
-    
-</main>
+        </section>
+
+    </main>
 
     <!-- =============================
     Our Footer Section Starts

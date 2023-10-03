@@ -21,6 +21,9 @@ p_btns.addEventListener("click", (e) => {
   const p_btn_clicked = e.target;
   console.log(p_btn_clicked);
 
+
+  if (!p_btn_clicked.classList.contains("p-btn")) return;
+
   p_btn.forEach((currElem) => {
     currElem.classList.remove("p-btn-active");
   });
@@ -58,6 +61,30 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+
+const myJSMedia = (widthsize) => {
+  if(widthsize.matches){
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    });
+  }
+  else{
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    });
+  }
+
+}
+
+const widthsize = window.matchMedia("(max-width: 780px)");
+// Call listenere function at runtime
+myJSMedia(widthsize);
+
+// Attach listner function on state change
+widthsize.addEventListener('change',myJSMedia);
 
 // var swiper = new Swiper(".mySwiper", {
 //   slidesPerView: 2,

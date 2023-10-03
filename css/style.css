@@ -91,7 +91,9 @@ Header Section Starts
 
 .header .logo {
     height: 50px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
+    margin-left: 3rem;
+    width: 150px;
 }
 
 .navbar{
@@ -273,6 +275,9 @@ Hero Section CSS Starts
     justify-content: center;
     align-items: center;
     /* padding: 5rem 5rem; */
+}
+.section-hero-image picture{
+    text-align: center;
 }
 
 
@@ -1118,7 +1123,7 @@ gap: 0;
 
     /* Swiper section */
     /* Temporary display none */
-    .section-swiper{
+    /* .section-swiper{
         display: none;
     }
 
@@ -1127,15 +1132,21 @@ gap: 0;
     }
     .active .mobile-nav-btn .mobile-nav-icon[name = "close-outline"]{
         display: block;
-    }
+    } */
 
     /* Contact */
     .section-contact{
         margin-top: 10rem;
         width: 90%;
     }
+    .section-contact-main .grid-two-coloum{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .section-contact-main input[type="submit"] {
         max-width: 40%;
+    }
+    .section-contact-main .grid {
+        gap: 3.5rem;
     }
 
     /* Footer */
@@ -1145,5 +1156,10 @@ gap: 0;
     }
     .section-footer .f-about{
         padding-right: 1rem;
+    }
+
+    .section-footer .f-about,
+    .section-footer .f-address{
+        grid-column: 1/-1;
     }
 }
